@@ -9,6 +9,6 @@ first_letter = letter[0].strip()
 for name in list_name_letter:
     name_letter = name.strip()
     first_letter_change = first_letter.replace("[name],", f"{name_letter},\n\n")
-    with open(f"Output/ReadyToSend/letter_for_{name_letter}", "w") as send:
+    with open(f"Output/ReadyToSend/letter_for_{name_letter}.txt", "w") as send:
         send.write(first_letter_change)
         send.write("You are invited to my birthday this Friday.\n\nHope you can make it!\n\nHekal.")
